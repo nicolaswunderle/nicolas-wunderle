@@ -1,7 +1,9 @@
 {
   "site": {
     "title": "Bostami Tailwind CSS Personal Portfolio HTML Template",
-    "favicon": "/assets/logo/favicon.jpg"
+    "favicon": "/portfolio/assets/logo/favicon.jpg",
+    "prod": "https://nicolaswunderle.github.io/",
+    "base": "/portfolio"
   },
   "metadata": {
     "meta_description": "Bostami Tailwind CSS Personal Portfolio HTML Template"

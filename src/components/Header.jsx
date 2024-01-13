@@ -6,9 +6,9 @@ import { themeToggler } from "../js/script";
 import { FaMoon, FaSun, FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import * as Icon from "react-icons/fa";
-import base from "../../configBase.js";
+import config from "../config/config.json";
 
-const baseHome = base || "/";
+const baseHome = config.site.base || "/";
 
 const Header = ({ activeMenuId, menuItems }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -77,7 +77,7 @@ const Header = ({ activeMenuId, menuItems }) => {
                   className={`flex cursor-pointer items-center pt-[0.625rem] pb-[0.625rem] pl-4 pr-1 xl:pl-5 xl:pr-5 font-poppins font-sans text-xs font-medium text-text-primary dark:text-white hover:text-btn-primary  transition-all duration-300 ease-in-out ${
                     activeMenuId == item.data.link ? "!text-btn-primary" : ""
                   }`}
-                  href={base + item.data.link}
+                  href={config.site.base + item.data.link}
                 >
                   <span className="mr-2 text-xl">
                     <ReactIcon />

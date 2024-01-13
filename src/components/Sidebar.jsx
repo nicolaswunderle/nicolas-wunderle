@@ -11,7 +11,7 @@ import {
   FaDribbble,
   FaLinkedinIn,
 } from "react-icons/fa";
-import base from "../../configBase.js";
+import config from "../config/config.json";
 
 const Sidebar = ({ personalInfo }) => {
   return (
@@ -134,7 +134,7 @@ const Sidebar = ({ personalInfo }) => {
         {/* <!-- dowanload button --> */}
         <button className="flex items-center text-lg text-white transition-all ease-in-out duration-200 mt-6 mx-auto px-8 py-3 rounded-[35px] bg-gradient-to-r from-btn-secondary to-btn-primary hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary">
           <img className="mr-3" src={downloadIcon} alt="icon" />
-          <a href={base + "/resume-01-dummy.pdf"} download aria-label="Download CV">
+          <a href={config.site.base + "/resume-01-dummy.pdf"} download aria-label="Download CV">
             {" "}
             Download CV
           </a>

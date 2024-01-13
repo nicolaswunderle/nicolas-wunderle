@@ -1,0 +1,87 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { getCollection } from "astro:content";
+const personalInfo = await getCollection("personalInfo");
+const menuItems = await getCollection("menu");
+const pathname = new URL(Astro.request.url).pathname;
+import { SEO } from "astro-seo";
+import config from "../config/config.json";
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <SEO
+      title={`${title ? title : config.site.title}`}
+      extend={{
+        link: [
+          { rel: "shortcut icon", href: `${config.site.favicon}` },
+          { rel: "preconnect", href: "../fonts.googleapis.com/index.html" },
+          { rel: "preconnect", href: "../fonts.gstatic.com/index.html" },
+          {
+            rel: "preconnect",
+            href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;family=Roboto+Slab:wght@300;400;500;600;700;800;900&amp;display=swap",
+          },
+        ],
+        meta: [
+          {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1.0",
+          },
+          {
+            name: "description",
+            content: `{${
+              description ? description : config.metadata.meta_description
+            }}`,
+          },
+        ],
+      }}
+    />
+    <!-- commom meta tag -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script defer>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body>
+    <div
+      class="bg-home-bg dark:bg-home-bg-dark min-h-screen bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full"
+    >
+      <Header client:load activeMenuId={pathname} menuItems={menuItems} />
+      <div
+        class="container mr-auto ml-auto grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]"
+      >
+        <!-- sidber personal info -->
+        <div
+          class="col-span-12 lg:col-span-4 hidden lg:block h-screen sticky top-44"
+        >
+          <Sidebar personalInfo={personalInfo} />
+        </div>
+        <div class="col-span-12 lg:col-span-8">
+          <!-- header for mobile devices start -->
+          <Navbar activeMenuId={pathname} menuItems={menuItems} />
+          <!-- header for mobile devices end -->
+          <div class="bg-white lg:rounded-2xl dark:bg-dark-primary">
+            <slot />
+            <Footer />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End bgHomeBg -->
+  </body>
+</html>

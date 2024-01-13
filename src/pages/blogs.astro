@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Blogs from "../components/Blogs";
+import { getCollection } from "astro:content";
+const availableBlogs = await getCollection("blogs");
+---
+
+<Layout
+  title="Blogs - Bostami Tailwind CSS Personal Portfolio HTML Template"
+  description="Bostami Tailwind CSS Personal Portfolio HTML Template"
+>
+  <div class="container mr-auto ml-auto px-4 sm:px-5 md:px-10 lg:px-[60px]">
+    <div class="py-12">
+      <h2
+        class="relative inline-block text-[2.5rem] dark:text-white font-bold transform after:absolute after:md:w-[12rem] after:left-[10rem] after:h-0.5 after:bg-gradient-to-r after:from-btn-secondary after:to-btn-secondary after:content-[''] after:rounded-md after:top-2/4 after:transform"
+      >
+        Blogs
+      </h2>
+      <Blogs availableBlogs={availableBlogs} client:load />
+    </div>
+  </div>
+</Layout>

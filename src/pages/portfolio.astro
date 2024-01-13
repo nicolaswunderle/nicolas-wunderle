@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Portfolio from "../components/Portfolio";
+import { getCollection } from "astro:content";
+const works = await getCollection("works");
+const filters = await getCollection("portfolioFilters");
+---
+
+<Layout
+  title="Portfolio - Bostami Tailwind CSS Personal Portfolio HTML Template"
+  description="Bostami Tailwind CSS Personal Portfolio HTML Template"
+>
+  <Portfolio portfolio={works} filters={filters} client:only />
+</Layout>

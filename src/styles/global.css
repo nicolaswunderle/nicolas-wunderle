@@ -1,0 +1,43 @@
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+/* width */
+.scrollbarLight::-webkit-scrollbar,
+.scrollbarDark::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+.scrollbarLight::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #e9e3e3;
+}
+
+/* Handle */
+.scrollbarLight::-webkit-scrollbar-thumb {
+  background: #797979;
+  border-radius: 100vh;
+  border: 5px solid #9c9fa1;
+}
+
+/* Handle on hover */
+.scrollbarLight::-webkit-scrollbar-thumb:hover {
+  background: #cfd0d3;
+}
+
+/* Handle on hover */
+.scrollbarLight::-webkit-scrollbar-thumb:hover {
+  background: #111111;
+}
+
+/* input remove auto fill background */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: gray;
+  /* -webkit-box-shadow: 0 0 0px 1000px transparent inset; */
+  transition: background-color 5000s ease-in-out 0s;
+  background: none !important;
+}

@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Modal from "./Modal";
 import { useState } from "react";
+import base from "../../configBase.js";
 
 const BlogCard = ({ blog }) => {
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +19,7 @@ const BlogCard = ({ blog }) => {
           <a href={blog.data.link}>
             <img
               className="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-              src={blog.data.img}
+              src={base + blog.data.img}
               alt="blog image"
               onClick={openModal}
             />
@@ -42,7 +43,7 @@ const BlogCard = ({ blog }) => {
           <div className="pr-3 pb-2">
             <img
               className="w-full md:h-[450px] object-cover rounded-xl mt-6"
-              src={blog.data.modal.blogImg}
+              src={base + blog.data.modal.blogImg}
               alt="blog image"
             />
             <div className="flex mt-4 text-tiny text-black dark:text-white">

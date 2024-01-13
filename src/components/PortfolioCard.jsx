@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import Modal from "./Modal";
+import base from "../../configBase.js";
 
 const PortfolioCard = ({ details }) => {
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +19,7 @@ const PortfolioCard = ({ details }) => {
           <a href={details.data.link}>
             <img
               className="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto"
-              src={details.data.img}
+              src={base + details.data.img}
               alt="portfolio image"
               onClick={openModal}
             />
@@ -87,7 +88,7 @@ const PortfolioCard = ({ details }) => {
           <div className="pr-3">
             <img
               className="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6"
-              src={details.data.modal.img}
+              src={base + details.data.modal.img}
               alt="portfolio image"
             />
           </div>

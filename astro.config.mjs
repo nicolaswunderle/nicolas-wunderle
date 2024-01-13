@@ -3,10 +3,12 @@ import tailwind from "@astrojs/tailwind";
 
 import react from "@astrojs/react";
 
+import base from "./configBase.js";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://nicolaswunderle.github.io/",
-  base: "/portfolio",
+  base: base,
   integrations: [tailwind(), react()],
   vite: {
     ssr: {

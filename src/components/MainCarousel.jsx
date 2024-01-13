@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import PropTypes from "prop-types";
+import base from "../../configBase.js";
 
 const MainCarousel = ({ clients }) => {
   const settings = {
@@ -39,7 +40,7 @@ const MainCarousel = ({ clients }) => {
             <div key={index}>
               <img
                 className="!max-w-full !w-auto !h-auto overflow-hidden text-center"
-                src={item}
+                src={base + item}
                 alt="brand icon"
               />
             </div>

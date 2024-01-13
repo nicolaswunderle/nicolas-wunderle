@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import * as Icon from "react-icons/fa";
+import base from "../../configBase.js";
 
 const Navbar = ({ activeMenuId, menuItems }) => {
   return (
@@ -12,11 +13,11 @@ const Navbar = ({ activeMenuId, menuItems }) => {
               <li key={index}>
                 <a
                   className={`flex h-20 w-20 cursor-pointer flex-col items-center justify-center bg-light-bg-five text-[0.8125rem] font-medium text-text-primary dark:bg-dark-border dark:text-main-text transition-all duration-300 ease-in-out mx-2.5 rounded-[10px] ${
-                    activeMenuId == item.data.link
+                    activeMenuId == base + item.data.link
                       ? "bg-gradient-to-r from-btn-primary to-gradient-to !text-white"
                       : "hover:bg-gradient-to-r hover:from-btn-primary hover:to-gradient-to hover:text-white hover:dark:text-white"
                   }`}
-                  href={item.data.link}
+                  href={base + item.data.link}
                 >
                   <span className="text-xl mb-1">
                     <ReactIcon />

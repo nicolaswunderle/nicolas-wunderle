@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import base from "../../configBase.js";
 
 const SkillCard = ({ skill }) => {
   return (
@@ -7,7 +8,7 @@ const SkillCard = ({ skill }) => {
     >
       <img
         className="w-10 h-10 object-contain block"
-        src={skill.data.img}
+        src={base + skill.data.img}
         alt="icon"
       />
       <div className="space-y-2">

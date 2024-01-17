@@ -1,8 +1,10 @@
 ---
-skill: App Development
+skill: Parapente
 about: >-
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod
-  volutpat.
-img: /assets/icons/icon1.svg
+  J'ai commencé le parapente à 15 ans et j'en pratique régulièrement dans le
+  Jura et en Valais.
+icon: FaWind
+textColor: text-skill-color-two
 bgColor: bg-skill-bg-two
 ---
+

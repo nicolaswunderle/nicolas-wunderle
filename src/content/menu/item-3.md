@@ -1,5 +1,6 @@
 ---
-name: "Works"
-link: "/portfolio/"
-icon: "FaBriefcase"
+name: Portfolio
+link: /portfolio/
+icon: FaBriefcase
 ---
+

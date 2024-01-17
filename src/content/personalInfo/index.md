@@ -1,17 +1,24 @@
 ---
 information:
-  name: Monalisa Ashley
-  profession: Ui/Ux Designer
-  phone: +123 456 7890
-  email: example@mail.com
-  location: 'Hong Kong, China'
-  birthday: 'May 27, 1990'
+  name: Nicolas Wunderle
+  profession: Créateur audiovisuel
+  email: nicolas.wunderle@gmail.com
+  location: 'Apples, Suisse'
+  birthday: 14 novembre 1999
   socialMedia:
-    faceBook: 'https://www.facebook.com/'
-    twitter: 'https://www.twitter.com/'
-    dribble: 'https://www.dribble.com/'
-    linkedIn: 'https://www.linkedin.com/'
+    instagram: 'https://www.instagram.com/nicolaswunderle/'
+    linkedin: 'https://www.linkedin.com/in/nicolas-wunderle/'
 ---
 
-I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs. <br/> <br/>
-My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
+<p>Je suis actuellement en <a href="https://heig-vd.ch/formation/bachelor/ingenierie-des-medias/" target="_blank" rel="noopener noreferrer" class="font-semibold dark:text-white cursor-pointer duration-300 transition hover:text-btn-primary dark:hover:text-btn-primary">Ingénierie des médias à l'HEIG-VD</a> à Yverdon-les-Bains.<br /> J'ai appris le métier de médiamaticien car je ne voulais pas faire que de l'informatique pur et dur. À ce moment-là je faisais du montage vidéo et c'est l'une des raisons pour laquelle j'ai choisi cet apprentissage.</p>
+<p>Aujourd'hui j'ai déjà pu réaliser pas mal de vidéo mais je veux encore progresser dans ce domaine. C'est pour cela qu'avec trois amis, nous avons créé une entité nous permettant d'en créer davantage : <a href="https://passiomedia.ch/" target="_blank" rel="noopener noreferrer" class="font-semibold dark:text-white cursor-pointer duration-300 transition hover:text-btn-primary dark:hover:text-btn-primary">passiomedia</a>. Nous sommes quatre médiamaticiens passionnés par la vidéo et n'avons qu'une envie : transmettre les connaissances, les histoires, les passions et plus encore par le 7<sup>ème</sup> art.</p>
+<h4 class="text-[1.8rem] dark:text-white font-bold font-robotoSlab pb-5">Pourquoi la vidéo ?</h4>
+<p>Ce domaine est incroyable car il permet de retransmettre avec précision ce qu'une personne à vécu ou veut raconter. On ne s'en rend plus vraiment compte, mais n'est-ce pas incroyable de pouvoir enregistrer un paysage, une personne, etc. à un moment clé et de pouvoir le montrer à d'autres personnes ou regarder ce même moment vingt ans après totalement inchangé.</p>
+<p>Tous les sous-domaines de la vidéo m'intéressent, c'est pour cela que je ne sais pas encore dans lequel je veux me spécialiser. Que ce soit la préproduction avec le scénario, le storyboard, le découpage technique, etc., la production avec la manipulation de caméras, de drones, le placement des lumières, la création du décor et des costumes, etc. ou la postproduction avec le montage, l'étalonnage, les musiques, le mixage, les effets spéciaux, etc. je cherche toujours à en savoir plus et à progresser.</p>
+<p>Il y a tellement de chose à raconter, à montrer, à transmettre et l'utilisation de la vidéo n'a jamais été aussi répandue qu'aujourd'hui. Oui tout le monde peut filmer facilement avec son smartphone et n'aurait pas forcément besoins de quelqu'un pour le faire à sa place.</p>
+<p>Prenons un humoriste qui aurait écrit son spectacle et qu'une personne lambda montait sur scène à sa place pour le faire à sa place. Hélas pour la personne lambda le spectacle ne sera jamais aussi drôle que lorsque c'est l'humoriste qui le joue.<br/> Pour moi c'est un peu pareil avec la vidéo, tout le monde est capable de filmer quelque chose avec son smartphone mais n'arrivera pas à exploiter le maximum de ce qu'il aura filmé.</p>
+<h4 class="text-[1.8rem] dark:text-white font-bold font-robotoSlab pb-5">Mon Ikigai</h4>
+<p>En faisant mon Ikigai, le domaine qui ressortait le plus était la vidéo. Cependant, je me suis un peu retrouvé dans la case entre la passion et la mission donc faire quelque chose que j'aime mais ne pas gagner assez pour en vivre. C'est toujours un doute que j'ai car au début c'est difficile d'avoir des mandats surtout au début.</p>
+<p>Une autre chose qui est ressortie ce sont les autres métiers que je pourrais faire. La programmation web est assez haute car actuellement je sens que je suis plus doué pour celle-ci que pour la vidéo. Mais c'est aussi dû au fait que j'ai moins d'expérience dans celle-ci.<br /> Un autre métier serait enseignant et je compte bien le garder dans un coin de ma tête car transmettre mon savoir est quelque chose d'important pour moi.<br /> Un dernier métier qui pourrait me convenir serait l'accompagnement de personnes âgées ou en situation de handicap. Depuis mon expérience en tant que civiliste à l'EMS Baud, j'ai découvert que j'avais un grand intérêt dans l'aide à la personne et surtout beaucoup de plaisir avec le contact humain.</p>
+<h4 class="text-[1.8rem] dark:text-white font-bold font-robotoSlab pb-5">La création de mon site web</h4>
+<p>J'ai créé ce site avec Astro et choisi un thème parmi ceux disponibles sur leur site. J'ai choisi d'utiliser Astro pour sa simplicité d'utilisation et sa rapidité. Les thèmes proposés par Astro me plaisait plus que sur d'autres sites SSG. Une fois mon thème choisi je n'ai pas eu de mal à le retoucher. En plus, il intègre Tina CMS qui m'a permis de changer facilement les données avec une interface dans le navigateur.</p>

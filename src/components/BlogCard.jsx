@@ -49,7 +49,7 @@ const BlogCard = ({ blog }) => {
             <div className="flex mt-4 text-tiny text-black dark:text-white">
               <span>{blog.data.modal.date}</span>
               <span className="relative transform pl-6 after:absolute after:content-[''] after:left-2 after:top-1/2 after:h-1 after:w-1 after:traslate-y-[-50%] after:rounded-full after:bg-text-primary">
-                Inspiration
+                {blog.data.category}
               </span>
             </div>
             <h2 className="dark:text-white sm:text-3xl mt-2 font-medium">

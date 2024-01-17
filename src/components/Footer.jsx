@@ -3,20 +3,11 @@ const Footer = () => {
   let year = d.getFullYear();
   return (
     <footer
-      className="overflow-hidden rounded-b-2xl"
+      className="overflow-hidden rounded-b-2xl px-4"
       style={{ background: "transparent" }}
     >
       <p className="text-center py-6 text-text-primary dark:text-main-text">
-        © {year} All Rights Reserved by{" "}
-        <a
-          className="hover:text-btn-primary duration-300 transition"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ib-themes
-        </a>
-        .
+        © {year} Tous droits réservés par Nicolas Wunderle.
       </p>
     </footer>
   );

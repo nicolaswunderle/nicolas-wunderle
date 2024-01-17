@@ -40,9 +40,17 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "image",
-            name: "img",
-            label: "Image",
+            type: "string",
+            name: "icon",
+            label: "Icon",
+            isTitle: false,
+            isBody: false,
+            required: true,
+          },
+          {
+            type: "string",
+            name: "textColor",
+            label: "textColor",
             isTitle: false,
             isBody: false,
             required: true,
@@ -88,12 +96,6 @@ export default defineConfig({
               },
               {
                 type: "string",
-                name: "phone",
-                label: "Phone",
-                required: true,
-              },
-              {
-                type: "string",
                 name: "email",
                 label: "Email",
                 required: true,
@@ -118,22 +120,12 @@ export default defineConfig({
                 isList: true,
                 fields: [
                   {
-                    name: "faceBook",
-                    label: "Facebook",
+                    name: "instagram",
+                    label: "Instagram",
                     type: "string",
                   },
                   {
-                    name: "twitter",
-                    label: "Twitter",
-                    type: "string",
-                  },
-                  {
-                    name: "dribble",
-                    label: "Dribbble",
-                    type: "string",
-                  },
-                  {
-                    name: "linkedIn",
+                    name: "linkedin",
                     label: "LinkedIn",
                     type: "string",
                   },
@@ -147,32 +139,6 @@ export default defineConfig({
             label: "About Me",
             isBody: true,
             required: true,
-          },
-        ],
-      },
-      {
-        name: "clients",
-        label: "Clients",
-        path: "/src/content/clients",
-        ui: {
-          // Don't allow editors to create new items
-          allowedActions: {
-            create: false,
-            delete: false,
-          },
-        },
-        fields: [
-          {
-            type: "image",
-            name: "clientImg",
-            label: "Client Image",
-            list: true,
-          },
-        ],
-        indexDefinitions: [
-          {
-            name: "img",
-            type: "image",
           },
         ],
       },
@@ -302,30 +268,6 @@ export default defineConfig({
         ],
       },
       {
-        name: "progressBar",
-        label: "Skills In Progress Bar",
-        path: "/src/content/progressBar",
-        fields: [
-          {
-            name: "title",
-            label: "Title",
-            type: "string",
-            isTitle: true,
-            required: true,
-          },
-          {
-            name: "percentage",
-            label: "Percentage",
-            type: "number",
-          },
-          {
-            name: "bgColor",
-            label: "Background Color",
-            type: "string",
-          },
-        ],
-      },
-      {
         name: "menu",
         label: "Menu",
         path: "/src/content/menu",
@@ -374,19 +316,6 @@ export default defineConfig({
             name: "tag",
             label: "Tag",
             type: "string",
-          },
-        ],
-      },
-      {
-        label: "Knowledges",
-        name: "knowledges",
-        path: "/src/content/knowledges",
-        fields: [
-          {
-            label: "Tags",
-            name: "skill",
-            type: "string",
-            list: true,
           },
         ],
       },

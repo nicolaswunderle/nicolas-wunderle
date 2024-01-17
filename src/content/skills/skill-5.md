@@ -1,6 +1,10 @@
 ---
-skill: "Management"
-about: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod volutpat."
-img: "/assets/icons/icon4.svg"
-bgColor: "bg-skill-bg-four"
+skill: Ski
+about: >-
+  J'adore partir en décembre et en février pour aller skier dans des petites
+  stations.
+icon: FaSkiing
+textColor: text-skill-color-five
+bgColor: bg-skill-bg-four
 ---
+

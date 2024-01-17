@@ -1,5 +1,6 @@
 ---
-name: "Blogs"
-link: "/blogs/"
-icon: "FaBlogger"
+name: Blog
+link: /blogs/
+icon: FaBlogger
 ---
+

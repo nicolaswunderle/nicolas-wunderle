@@ -1,5 +1,6 @@
 ---
-name: "Resume"
-link: "/resume/"
-icon: "FaFileAlt"
+name: Parcours
+link: /resume/
+icon: FaFileAlt
 ---
+

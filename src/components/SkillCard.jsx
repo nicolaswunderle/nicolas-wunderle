@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
-import config from "../config/config.json";
+import * as Icon from "react-icons/fa";
 
-const SkillCard = ({ skill }) => {
+const SkillCard = ({ skill, index }) => {
+  const ReactIcon = Icon[skill.data.icon];
+ 
   return (
     <div
-      className={`flex gap-4 rounded-xl p-6 border-dark-border dark:border-2 ${skill.data.bgColor} dark:bg-transparent`}
+      className={`flex gap-6 rounded-xl p-6 border-dark-border dark:border-2 ${skill.data.bgColor} dark:bg-transparent`}
     >
-      <img
-        className="w-10 h-10 object-contain block"
-        src={config.site.base + skill.data.img}
-        alt="icon"
-      />
+      <span className={`text-4xl ${skill.data.textColor}`}>
+        <ReactIcon />
+      </span>
       <div className="space-y-2">
         <h3 className="dark:text-white text-[22px] font-semibold">
           {skill.data.skill}

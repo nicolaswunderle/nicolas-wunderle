@@ -3,19 +3,16 @@ import avatar from "/assets/about/avatar.jpg";
 import PropTypes from "prop-types";
 import {
   FaEnvelopeOpenText,
-  FaMobileAlt,
   FaMapMarkerAlt,
   FaCalendarAlt,
-  FaFacebookF,
-  FaTwitter,
-  FaDribbble,
+  FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
 import config from "../config/config.json";
 
 const Sidebar = ({ personalInfo }) => {
   return (
-    <div className="w-full mb-6 lg:mb-0 mx-auto relative bg-white text-center dark:bg-dark-primary px-6 rounded-[20px] mt-[180px] md:mt-[220px] lg:mt-0">
+    <div className="w-full mb-8 lg:mb-0 mx-auto relative bg-white text-center dark:bg-dark-primary px-6 rounded-[20px] mt-[180px] lg:mt-0">
       {/* <!-- profile image --> */}
       <img
         src={avatar}
@@ -30,42 +27,20 @@ const Sidebar = ({ personalInfo }) => {
           {personalInfo[0].data.information.profession}
         </h3>
         <div className="flex justify-center space-x-3">
-          {/* <!-- facebook icon and link --> */}
-          <a
-            href={personalInfo[0].data.information.socialMedia.faceBook}
-            aria-label="Facbook Profile Link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="flex h-10 w-10 items-center justify-center bg-light-bg-five dark:bg-dark-border transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white text-fb-icon">
-              <FaFacebookF />
-            </span>
-          </a>
-          {/* <!-- twitter icon and link --> */}
-          <a
-            href={personalInfo[0].data.information.socialMedia.twitter}
-            aria-label="Twitter Profile Link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="flex h-10 w-10 items-center justify-center bg-light-bg-five dark:bg-dark-border transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white text-twitter-icon">
-              <FaTwitter />
-            </span>
-          </a>
           {/* <!-- dribbble icon and link --> */}
           <a
-            href={personalInfo[0].data.information.socialMedia.dribble}
-            aria-label="Dribble Profile Link"
+            href={personalInfo[0].data.information.socialMedia.instagram}
+            aria-label="Instagram Profile Link"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="flex h-10 w-10 items-center justify-center bg-light-bg-five dark:bg-dark-border transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white text-dribble-icon">
-              <FaDribbble />
+              <FaInstagram />
             </span>
           </a>
           {/* <!-- linkedin icon and link --> */}
           <a
-            href={personalInfo[0].data.information.socialMedia.linkedIn}
+            href={personalInfo[0].data.information.socialMedia.linkedin}
             aria-label="LinkedIn Profile Link"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,55 +51,42 @@ const Sidebar = ({ personalInfo }) => {
           </a>
         </div>
         {/* <!-- personal infomation start --> */}
-        <div className="p-7 rounded-2xl mt-7 bg-light-bg-five dark:bg-dark-mobile-primary">
-          <div className="flex border-b border-light-border-two dark:border-dark-border-two pb-2.5">
-            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-one shadow-md">
-              <FaMobileAlt />
-            </span>
-            <div className="text-left ml-2.5">
-              <p className="text-xs text-text-primary dark:text-main-text">
-                Phone
-              </p>
-              <p className="dark:text-white">
-                {personalInfo[0].data.information.phone}
-              </p>
-            </div>
-          </div>
-          <div className="flex border-b border-light-border-two dark:border-dark-border-two py-2.5">
-            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-two shadow-md">
+        <div className="py-5 px-7 rounded-2xl mt-7 bg-light-bg-five dark:bg-dark-mobile-primary">
+          <div className="flex border-b border-light-border-two dark:border-dark-border-two py-3.5">
+            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-two shadow-md shrink-0">
               <FaEnvelopeOpenText />
             </span>
             <div className="text-left ml-2.5">
               <p className="text-xs text-text-primary dark:text-main-text">
                 Email
               </p>
-              <p className="dark:text-white">
+              <p className="dark:text-white break-all">
                 {personalInfo[0].data.information.email}
               </p>
             </div>
           </div>
-          <div className="flex border-b border-light-border-two dark:border-dark-border-two py-2.5">
-            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-three shadow-md">
+          <div className="flex border-b border-light-border-two dark:border-dark-border-two py-3.5">
+            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-three shadow-md shrink-0">
               <FaMapMarkerAlt />
             </span>
             <div className="text-left ml-2.5">
               <p className="text-xs text-text-primary dark:text-main-text">
-                Location
+                Localisation
               </p>
-              <p className="dark:text-white">
+              <p className="dark:text-white break-all">
                 {personalInfo[0].data.information.location}
               </p>
             </div>
           </div>
-          <div className="flex py-2.5">
-            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-four shadow-md">
+          <div className="flex py-3.5">
+            <span className="flex h-10 w-10 items-center justify-center transition-all duration-300 ease-in-out rounded-lg hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary hover:text-white bg-white dark:bg-black text-icon-color-four shadow-md shrink-0">
               <FaCalendarAlt />
             </span>
             <div className="text-left ml-2.5">
               <p className="text-xs text-text-primary dark:text-main-text">
-                Birthday
+                Anniversaire
               </p>
-              <p className="dark:text-white">
+              <p className="dark:text-white break-all">
                 {personalInfo[0].data.information.birthday}
               </p>
             </div>
@@ -134,9 +96,9 @@ const Sidebar = ({ personalInfo }) => {
         {/* <!-- dowanload button --> */}
         <button className="flex items-center text-lg text-white transition-all ease-in-out duration-200 mt-6 mx-auto px-8 py-3 rounded-[35px] bg-gradient-to-r from-btn-secondary to-btn-primary hover:bg-gradient-to-r hover:from-btn-primary hover:to-btn-secondary">
           <img className="mr-3" src={downloadIcon} alt="icon" />
-          <a href={config.site.base + "/resume-01-dummy.pdf"} download aria-label="Download CV">
+          <a href={config.site.base + "/CV_Nicolas_Wunderle.pdf"} download aria-label="Télécharger le CV">
             {" "}
-            Download CV
+            Télécharger mon CV
           </a>
         </button>
       </div>

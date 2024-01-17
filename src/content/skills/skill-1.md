@@ -1,8 +1,10 @@
 ---
-skill: Ui/Ux Design
+skill: Escape game
 about: >-
-  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod
-  volutpat.
-img: /assets/icons/icon.svg
+  J'ai découvert les escape game avec ma famille, depuis j'adore en faire et je
+  trouve génial les univers que ces game masters arrivent à créer.
+icon: FaUnlock
+textColor: text-skill-color-one
 bgColor: bg-skill-bg-one
 ---
+

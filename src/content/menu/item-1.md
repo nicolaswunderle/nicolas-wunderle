@@ -1,5 +1,6 @@
 ---
-name: "About"
-link: "/"
-icon: "FaUser"
+name: À propos
+link: /
+icon: FaUser
 ---
+

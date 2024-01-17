@@ -26,12 +26,12 @@ const Header = ({ activeMenuId, menuItems }) => {
         <div className="w-full flex justify-between items-center px-4">
           <a href={baseHome}>
             <img
-              className="logo lightLogo h-[20px] lg:h-[26px] hidden"
+              className="logo lightLogo h-[40px] lg:h-[65px] hidden"
               src={lightLogo}
               alt="logo"
             />
             <img
-              className="logo darkLogo h-[20px] lg:h-[26px] hidden"
+              className="logo darkLogo h-[40px] lg:h-[65px] hidden"
               src={darkLogo}
               alt="logo"
             />
@@ -67,14 +67,14 @@ const Header = ({ activeMenuId, menuItems }) => {
         </div>
       </div>
       {/* Mobile Menu */}
-      <nav id="navbar" className={`${showMenu ? "" : "hidden"} lg:hidden`}>
-        <ul className="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-dark-mobile-primary">
+      <nav id="navbar" className={`${showMenu ? "" : "hidden "}lg:hidden relative container ml-auto mr-auto`}>
+        <ul className="block rounded-b-[20px] shadow-md absolute z-[22222222222222] py-1.5 w-full bg-white dark:bg-dark-mobile-primary">
           {menuItems.map((item, index) => {
             const ReactIcon = Icon[item.data.icon];
             return (
               <li key={index}>
                 <a
-                  className={`flex cursor-pointer items-center pt-[0.625rem] pb-[0.625rem] pl-4 pr-1 xl:pl-5 xl:pr-5 font-poppins font-sans text-xs font-medium text-text-primary dark:text-white hover:text-btn-primary  transition-all duration-300 ease-in-out ${
+                  className={`flex cursor-pointer items-center py-3.5 px-5 xl:pl-5 xl:pr-5 font-poppins font-sans text-xs font-medium text-text-primary dark:text-white hover:text-btn-primary  transition-all duration-300 ease-in-out ${
                     activeMenuId == item.data.link ? "!text-btn-primary" : ""
                   }`}
                   href={config.site.base + item.data.link}

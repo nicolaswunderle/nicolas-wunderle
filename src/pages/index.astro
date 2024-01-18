@@ -22,7 +22,7 @@ const skills = await getCollection("skills");
     <!-- personal info for mobile devices end -->
     <!-- about page title -->
     <h2
-      class="relative inline-block text-[2.5rem] dark:text-white font-bold transform after:absolute after:md:w-[12rem] after:left-[22rem] after:h-0.5 after:bg-gradient-to-r after:from-btn-secondary after:to-btn-secondary after:content-[''] after:rounded-md after:top-2/4 after:transform"
+      class="relative inline-block text-[2.5rem] dark:text-white font-bold transform after:absolute after:md:w-[12rem] after:left-[22.5rem] after:h-0.5 after:bg-gradient-to-r after:from-btn-secondary after:to-btn-secondary after:content-[''] after:rounded-md after:top-2/4 after:transform"
     >
       À propos de moi
     </h2>
@@ -33,7 +33,7 @@ const skills = await getCollection("skills");
     >
       <div class="col-span-12 space-y-2.5">
         <div 
-          class="lg:mr-16 text-text-primary dark:text-main-text leading-7 [&>p]:mb-3 [&>h4]:mt-10"
+          class="lg:mr-16 text-text-primary dark:text-main-text leading-7 [&>p]:mb-3 [&>h4]:mt-10 [&>h4]:text-[initial]"
           set:html={personalInfo[0].body}
         >
           
@@ -50,8 +50,8 @@ const skills = await getCollection("skills");
     </h3>
     <div class="grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-2">
       {
-        skills.map((item, index) => {
-          return <SkillCard skill={item} index={index} />;
+        skills.map((item) => {
+          return <SkillCard skill={item} />;
         })
       }
     </div>

@@ -1,4 +1,5 @@
 ---
-name: "All"
-tag: "*"
+name: Tout
+tag: '*'
 ---
+

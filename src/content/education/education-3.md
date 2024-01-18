@@ -1,6 +1,7 @@
 ---
-year: "2021"
-title: "Best Developer"
-subTitle: "University Of Melbourne, NA"
-bgColor: "bg-edu-card-one"
+year: 2015 – 2019
+title: CFC de médiamaticien
+subTitle: CPNV à Ste-Croix
+bgColor: bg-edu-card-one
 ---
+

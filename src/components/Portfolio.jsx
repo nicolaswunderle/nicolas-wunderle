@@ -39,7 +39,7 @@ const PortfolioContent = ({ portfolio, filters }) => {
   return (
     <div className="container mr-auto ml-auto mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
       <div className="py-12">
-        <h2 className="relative inline-block text-[2.5rem] dark:text-white font-bold transform after:absolute after:md:w-[12rem] after:left-[14rem] after:h-0.5 after:bg-gradient-to-r after:from-btn-secondary after:to-btn-secondary after:content-[''] after:rounded-md after:top-2/4 after:transform">
+        <h2 className="relative inline-block text-[2.5rem] dark:text-white font-bold transform after:absolute after:md:w-[12rem] after:left-[13rem] after:h-0.5 after:bg-gradient-to-r after:from-btn-secondary after:to-btn-secondary after:content-[''] after:rounded-md after:top-2/4 after:transform">
           Portfolio
         </h2>
         <ul className="button-group isotop-menu-wrapper mt-[30px] flex w-full justify-start md:justify-end flex-wrap font-medium">

@@ -1,7 +1,8 @@
 ---
-year: 2017-2021
-title: Web Developer
-subTitle: Imperialize Technical Institute
+year: Février 2022 à mars 2023
+title: Réalisateur de capsules vidéos pour des enseignants
+subTitle: HETS-FR à Fribourg
 bgColor: bg-exp-card-one
 ---
+
 

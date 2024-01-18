@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import * as Icon from "react-icons/fa";
 
-const SkillCard = ({ skill, index }) => {
+const SkillCard = ({ skill }) => {
   const ReactIcon = Icon[skill.data.icon];
  
   return (

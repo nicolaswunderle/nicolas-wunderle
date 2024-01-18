@@ -1,7 +1,8 @@
 ---
-year: 2015-2017
-title: Sr. Web Developer
-subTitle: ib-themes ltd.
+year: Été 2019 et été 2020
+title: Animateur et moniteur de centre aéré sur le cinéma
+subTitle: OCCS à Genève
 bgColor: bg-exp-card-two
 ---
+
 

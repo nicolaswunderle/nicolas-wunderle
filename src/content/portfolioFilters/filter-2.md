@@ -1,4 +1,6 @@
 ---
-name: "Video"
-tag: ".dev"
+name: Cours
+tag: .cours
 ---
+
+

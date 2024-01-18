@@ -5,7 +5,7 @@ const Modal = ({ closeModal, children }) => {
     <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none w-100 h-100 bg-[rgba(0,0,0,0.75)]">
       <div
         id="portfiloOne"
-        className=" !max-w-[800px] absolute left-[50%] top-[50%] mr-auto ml-auto flex w-[85%] translate-x-[-50%] translate-y-[-50%] items-center rounded-[0.75rem] p-4 bg-white dark:bg-[rgb(50,50,50)] shadow-sm"
+        className=" !max-w-[800px] absolute left-[50%] top-[50%] mr-auto ml-auto flex w-[85%] translate-x-[-50%] translate-y-[-50%] items-center rounded-[0.75rem] pt-8 pb-4 px-4 md:pt-10 md:pb-8 md:px-8 bg-white dark:bg-[rgb(50,50,50)] shadow-sm"
       >
         <div className="overflow-y-scroll min-[1700px]:overflow-hidden max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
           {children}

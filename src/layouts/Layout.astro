@@ -35,9 +35,9 @@ const { title, description } = Astro.props;
           },
           {
             name: "description",
-            content: `{${
+            content: `${
               description ? description : config.metadata.meta_description
-            }}`,
+            }`,
           },
         ],
       }}
